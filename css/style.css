@@ -133,21 +133,24 @@ main{
   }
 /* small screen */
 @media (min-width:768px){
-    .carousel-inner
+    .carousel-inner,
+    .carousel-caption,
     .container {
         width: 750px;
     }
 }
 /* medium screen */
 @media (min-width:992px){
-    .carousel-inner
+    .carousel-inner,
+    .carousel-caption,
     .container{
         width: 970px;
     }
 }
 /* large screen */
 @media (min-width:1200px){
-    .carousel-inner
+    .carousel-inner,
+    .carousel-caption,
     .container{
         width: 1170px;
     }
