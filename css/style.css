@@ -131,40 +131,41 @@ main{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
   }
-/* small screen */
-@media (min-width:768px){
-    .carousel-inner,
-    .carousel-caption,
-    .container {
-        width: 750px;
+  @media (min-width: 1024px) {
+    #carouselExampleCaptions .carousel-content {
+      width: 60%;
     }
-}
-/* medium screen */
-@media (min-width:992px){
-    .carousel-inner,
-    .carousel-caption,
-    .container{
-        width: 970px;
+  
+    #carouselExampleCaptions .carousel-control-prev,
+    #carouselExampleCaptions .carousel-control-next {
+      width: 5%;
     }
-}
-/* large screen */
-@media (min-width:1200px){
-    .carousel-inner,
-    .carousel-caption,
-    .container{
-        width: 1170px;
+  }
+  
+  @media (max-width: 992px) {
+    #carouselExampleCaptions .carousel-container {
+      top: 58px;
     }
-}
+  
+    #carouselExampleCaptions .carousel-content h2 {
+      margin-bottom: 15px;
+      font-size: 22px;
+    }
+  
+    #carouselExampleCaptions .carousel-content p {
+      font-size: 15px;
+    }
+  }
+  
+  @media (max-height: 500px) {
+    #carouselExampleCaptions {
+      height: 120vh;
+    }
+  }
 
 
 
-     
-@keyframes load{
-    from {
-      width: 0%
-    }
-}
-
+    
 
 .accordion-item:hover .accordion-button {
     background-color: rgb(33, 32, 32);
